@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>A class implementing unit tests.</string>
+	<key>Summary</key>
+	<string>A class implementing unit tests</string>
+	<key>SortOrder</key>
+	<string>7</string>
+	<key>BuildableType</key>
+	<string>Test</string>
+	<key>DefaultCompletionName</key>
+	<string>Tests</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.macosx</string>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>classUnderTest</string>
+			<key>Name</key>
+			<string>Class to be tested:</string>
+			<key>Description</key>
+			<string>Class for which a unit test class will be created</string>
+			<key>NotPersisted</key>
+			<string>Yes</string>
+			<key>Required</key>
+			<string>Yes</string>
+			<key>Type</key>
+			<string>class</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_classUnderTest:identifier___Tests</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>sutName</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>Name</key>
+			<string>SUT variable name:</string>
+			<key>Description</key>
+			<string>How to name a SUT variable</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>sut</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string> ___VARIABLE_sutName___</string>
+			<key>Identifier</key>
+			<string>sutIvarName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sutIvarName:identifier___</string>
+			<key>Identifier</key>
+			<string>sutIvar</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>OCMock</string>
+			<key>Name</key>
+			<string>Import OCMock</string>
+			<key>Description</key>
+			<string>Whether to import OCMock framework header</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+	</array>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.m</string>
+</dict>
+</plist>
