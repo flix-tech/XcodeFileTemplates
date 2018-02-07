@@ -11,7 +11,7 @@ ___IMPORTHEADER_classUnderTest___
     ___VARIABLE_classUnderTest___ *___VARIABLE_sutIvar___;
 }
 
-- (void)setUp 
+- (void)setUp
 {
     [super setUp];
 
